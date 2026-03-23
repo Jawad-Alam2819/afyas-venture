@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Configuration: Enter your business WhatsApp number here (with country code, no + or 00)
-    const businessNumber = "+923433870899"; // Example: Dubai number
+    const businessNumber = "+923451004420"; // Example: Dubai number
 
     // 2. Select all order buttons
     const orderButtons = document.querySelectorAll('.order-btn, button');
