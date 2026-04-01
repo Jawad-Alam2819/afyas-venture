@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const whatsappUrl = `https://wa.me/${businessNumber}?text=${message}`;
                 
                 // Open in a new tab
-                window.location.href = whatsappUrl; // This opens it in the same tab
+                window.open(whatsappUrl, '_blank' , 'noopener , noreferrer');
             }
         });
     });
