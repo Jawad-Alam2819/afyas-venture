@@ -449,6 +449,26 @@ button:hover {
     font-weight: 700;
 }
 
+.whatsapp-contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--primary-teal);
+    font-weight: 700;
+}
+
+.contact-icon {
+    width: 20px;  /* Size of the icon */
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Hover effect for better UX */
+.whatsapp-contact:hover {
+    opacity: 0.8;
+}
+
 footer {
     background: #111;
     color: #888;
