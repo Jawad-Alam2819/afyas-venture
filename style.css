@@ -308,6 +308,74 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Container - keeps everything on one or two lines */
+.size-selector {
+    margin: 8px 0;
+    text-align: left;
+}
+
+.size-selector p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Flex wrapper to keep chips inline */
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+/* The Label/Chip */
+.size-selector label {
+    display: inline-flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #f9f9f9;
+    padding: 3px 6px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    min-width: 50px;
+    transition: all 0.2s ease;
+}
+
+/* The tiny text for pieces */
+.size-selector small {
+    display: block;
+    font-size: 0.65rem;
+    color: #888;
+    margin-top: 2px;
+}
+
+/* Hover & Selected States */
+.size-selector label:hover {
+    background: #f0f0f0;
+    border-color: #bbb;
+}
+
+/* Hide the actual radio circle to save space */
+.size-selector input[type="radio"] {
+    display: none;
+}
+
+/* When the radio is checked, change the label style */
+.size-selector label:has(input:checked) {
+    background: #25D366; /* WhatsApp Green */
+    border-color: #128C7E;
+    color: white;
+}
+
+/* Make piece text white when selected */
+.size-selector label:has(input:checked) small {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 button {
     background-color: var(--primary-teal);
     color: var(--white);
